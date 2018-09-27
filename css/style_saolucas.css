@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* CSS Document */
+/*RESET*/
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+    border: none;
+    outline: none;
+    box-sizing: inherit; /*Quando usar o padding não altera o tamanho */
+  font-weight: 300;
+	font-family: 'Palanquin Dark', sans-serif;
+}
+a{text-decoration: none;}
+ul{ list-style: none;}
+
+/*CABEÇALHO*/
+.cabecalho{
+	background-image: url(../img/planodefundo.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.logo{ /*Logo do cabeçalho*/
+   		width: 400px;
+    	height: 400px;
+		float: left;
+		top: 0;
+    	background: url(../img/../img/logo.png) -70% -70%/400px no-repeat;
+    	font-size: 0;
+}
+.hbottom{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.titulo{
+	width: 50%;
+	padding-left: 2%;
+	text-align: center;
+}
+.titulo h2{
+	margin-bottom: 2%;
+	font-size: 2.5em;
+	width: 100%;
+}
+.titulo h3{
+	margin: 2%;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 1.5em;
+}
+.atendimento{
+	text-align: center;
+	color: #fff;
+	width: 30%;
+	margin-bottom: 2%;
+	background-color: rgba(93,143,144,.7);
+}
+.atendimento h3{
+	padding: 3%;
+	font-size: 1.4em;
+}
+.atendimento p{ margin: 2%; }
+.atend{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+p .dia{
+	width: 60%;
+	margin-left: 5%;
+	margin-right: 30%;
+	text-align: left;
+}
+p .horario{
+	width: 30%;
+	text-align: right;
+}
+.telefones{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 3%;
+	justify-content: center;
+}
+.tel,.cel{margin: 3%;}
+/*Butãos mobile*/
+.btn-menu,.btnclose{
+	display: none;
+}
+.linhag{
+	width: 90%;
+	height: 2px;
+	margin-left: 5%;
+	background-color: aqua;
+}
+.linha{
+	width: 90%;
+	height: 1px;
+	margin-left: 5%;
+	background-color: black;
+}
+/*Menu*/
+.menu{
+    		top: 0;
+    		left: 0;
+ 				width: auto;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        display: block;
+        position: static;
+    }
+    .menu li{
+        padding: 0;
+        float: left;
+    }
+    .menu li a{
+        color: #130400;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    .menu li a:hover{
+        border: none;
+        color: #da6709; 
+    }
+
+/*SOBRE*/
+.sobre{
+	text-align: center;
+	justify-content: center;
+	background-color: #fff;
+}
+.sobre h2{
+	margin: 2%;
+	margin-bottom: 1%;
+	font-size: 2.0em;
+}
+
+.sobre p{
+	padding: 2%;
+	padding-top: 0;
+	width: 45%;
+	margin-left: 28%;
+	font-size: 1.3em;
+}
+.vismais{
+	cursor: pointer;
+		padding: 1%;
+		margin: 1%;
+		text-align: center;
+		margin-top: 0;
+  	border-radius: 10px;
+		background-color: red;
+}
+.vismais:hover{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.vismais a{
+	font-size: 1.0em;
+	color: #fff;
+}
+
+/*Especialidades*/
+main{
+	width: 100%;
+	height: auto;
+	background-color: #f5f5f5;
+}
+main h2{
+	text-align: center;
+	color: #130400;
+	font-size: 2.0em;
+}
+.especial{
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.espec{ /*Irei colocar os tres serviços ao lado*/
+        width: 30%;
+				float: left;
+				background-color: #fff;
+				margin-right: 2%;
+				margin-bottom: 2%;
+}
+.espec:nth-child(1), .espec:nth-child(4){margin-left: 1%;}
+.espec:nth-child(3),.espec:nth-child(6){ margin-right: 0%; }
+.espec1{
+	display: inline-block;
+}
+
+.espec img{ border-radius: 7px 7px 0 0;width: 100%;height: auto;}
+.inner{ padding: 7% 2%;text-align: center; } /*inner = titulo dos serviços*/
+.inner h3{
+	font-size: 1.5em;
+  color: #130400; 
+  font-weight: 700;
+}
+.inner h4{
+	font-size: 1.2em;
+  color: #130400;
+  margin-top: 2%;
+}
+.inner p{
+	text-align: left;
+	margin-top: 5%;
+	margin-bottom: 2%;
+    color: #130400;
+    line-height: 1.5em;
+}
+.botao{
+	padding: 2% 0;
+	display: block;
+	justify-content: center;
+	text-align: center;
+}
+
+/*RODAPE*/
+footer{
+	background-color: rgb(116, 175,212);
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+}
+.copy{
+	font-size: 1.5em;
+	width: 100%;
+	color: #fff;
+	background-color: rgb(100,147,177);
+	text-align: center;
+}
+.copy a{
+	color: #fff;
+}
+.copy a:hover{
+	text-decoration: underline;
+}
+.inf{
+	float: left;
+	width: 50%;
+	margin-left: 2%;
+}
+.inf h3{
+	font-size: 1.5em;
+	margin: 4% 2%;
+}
+.inf h4{
+	font-size: 1.0em;
+	margin: 3%;
+}
+.inf a{
+	font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 3%;
+		text-align: center
+}
+
+.inf a:hover{ color: rgba(255, 255, 255, 1.0); }
+.comochegar{
+	width: 45%;
+}
+.comochegar h3{
+	font-size: 1.5em;
+	margin: 2%;
+}
+iframe{
+	width: 100%;
+	height: 80%;
+}
+
+/*ANCORA*/
+.ancora{
+	position: fixed;
+	padding: 0 1%;
+	bottom: 0;
+	right: 0;
+	opacity: 0.7;
+	margin-right: 0.6%;
+	font-size: 2.0em;
+}
+.ancora:hover{
+	opacity: 1.0;
+}
+.fa-arrow-up{
+	color: red;
+}
+
+@media screen and (max-width : 950px){
+	.logo{
+		width: 228px;
+		height: 250px;
+		background-position: -80% -60%;
+		background-size: 248px;
+	}
+	.menu a{
+		font-size: 1.0em;
+		padding-right: 1%;
+	}
+	.titulo h2{
+		font-size: 2.0em;
+	}
+	.titulo h3{
+		font-size: 1.0em;
+	}
+	.atendimento{
+		width: 35%;
+	}
+	.espec{
+		width: 48%;
+		margin: 2% 1%;
+		float: left;
+	}
+	.sobre p{
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	.copy{
+		font-size: 1.0em
+	}
+}
+@media screen and (max-width : 750px){
+	.btn-menu{  /*Botão do menu*/
+		width: 56px;
+		height: 56px;
+		margin: 2%;
+		float: right;
+		display: block;
+		text-align: center;
+		color: #fff;
+		border-radius: 56px;
+		cursor: pointer;
+		background: linear-gradient(to right, #ce2e3c, rgb(243, 146, 0));
+	}
+
+	nav.menu{
+		display: none;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.9);
+		top: 0;
+		left: 0;
+	}
+
+	.btnclose{ /*Botão de fechar o menu*/
+	color: #fff;
+	display: block;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+.btnclose i{
+	font-size: 1.5em;
+}
+	.menu li{ padding: 1.5%;width: 100%; }
+	.menu li a{
+		font-size: 1.5em;
+		color: #fff;
+		padding: 1.5%; 
+	}
+	.menu li a:hover{
+		text-decoration: #ce2e3c;
+	}
+	.titulo{
+		width: 100%;
+	}
+	.atendimento{
+		width: 60%;
+	}
+	.sobre p{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.espec{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.EX{
+		display: none;
+	}
+	.especial{
+		width: 96%;
+		margin: 2%;
+	}
+	
+	.vismais a{
+		font-size: 1.1em;
+	}
+	.inf{
+		width: 90%;
+		text-align: center;
+		margin-right: 5%; 
+		float:none; 
+	}
+	.comochegar{
+		text-align: center;
+		width: 80%;
+		margin-left: 10%;
+	}
+	iframe{
+		height: 70%;
+	}
+}
+@media screen and (max-width : 480px){
+	.atendimento{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.sobre p{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.sobre p{
+		font-size: 1.2em;
+	}
+}
+.copy{
+	font-size: 1.1em;
+}
+.copy i{
+	display: none;
+}

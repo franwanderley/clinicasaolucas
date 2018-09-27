@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(../img/fundo.gif)
+}
+header{
+	width: 90%;
+	margin-left: 5%;
+	background-image: url(../img/fundoindex.jpg);
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	
+}
+header h2{
+	font-size: 2.0em;
+	padding-top: 2%;
+}
+header p{
+	padding: 2%;
+	padding-bottom: 15%;
+	font-size: 1.5em;	
+}
+h2.cv{
+	text-align: center;
+	margin: 2%;
+	width: 90%;
+}
+/*CLINICAS*/
+main{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #f5f5f5;
+	margin: 0 5%;
+	
+	justify-content: center;
+}
+main a{
+	margin: auto;
+	margin-bottom: 5%;
+}
+.clinicas{
+		
+		text-align: center;
+		justify-content: center;
+		color: #fff;
+    	border-radius: 7px;
+}
+
+.clinicas:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Clinica são lucas*/
+.c1{
+	background:url(../img/img2.jpg) center/cover no-repeat;
+}
+
+.c1 img{ border-radius: 7px 7px 0 0; width: 20%; height: 20%;margin-top: 2%;}
+/*Oftalmoclinica sobralense*/
+.c2{
+	background: url(../img/IMG-ofs.jpg) center/cover no-repeat;
+}
+
+.c2 img{border-radius: 7px 7px 0 0; width: 20%; height: 20%;margin-top: 2%;}
+.clinicas h3{
+	font-size: 1.5em;
+  font-weight: 700;
+	margin: 2%;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.clinicas p{
+	font-size: 1.0em;
+	line-height: 1.5em;
+	text-align: justify;
+	margin: 2%
+}
+
+main a{
+	text-decoration: none;
+	width: 40%;
+	height: auto;
+}
+/*RODAPE*/
+footer{
+	background-color:#130400;
+	color: #fff;
+	width: 90%;
+	margin-left: 5%;
+	text-align: center;
+	font-size: 1.5em;
+}
+.nomes{
+	text-align: justify;
+	width: 60%;
+	margin-left: 15%;
+	display: inline-block;
+}
+.nome1{
+	width: 30%;
+	float: left;
+	margin-left: 0;
+}
+.nome2{
+	width: 30%;
+	float: right;
+	margin-right: 0;
+}
+li{
+	font-size: 1.0em;
+}
+
+@media screen and (max-width : 800px){
+	header{
+		background-image: url(../img/fundoresponsivo.jpg);
+	}
+	header p{
+		padding-bottom: 2%;
+		text-shadow: 2px 4px 3px rgba(255,255,255,0.5);
+		
+	}
+	header h2{
+		padding-top: 30%;
+		text-shadow: 2px 4px 3px rgba(255,255,255,0.5);
+	}
+	main{
+		width: 90%;
+	}
+	.clinicas{
+		margin: 5%;
+	}
+	main a{
+		width: 50%;
+		margin: auto;
+		margin-bottom: 5%;
+		height: auto;
+	}
+	.c1{ background-size: 230%; }
+	.c2{ 
+		background-size: cover;
+	}
+	
+	.clinicas img{
+		width: 30%;
+		height: 30%;
+	}
+	.clinicas p{
+		font-size: 0.9em;
+	}
+	c1{
+		margin: 5%;
+	}
+	
+/*Rodape*/
+	footer{
+		font-size: 1.0em;
+	}
+	.nomes{
+		width: 70%;
+	}
+	.nome1,.nome2{
+		width: 50%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width : 600px){
+	header,main,footer{
+		width: 100%;
+		margin: 0;
+	}
+	header p{
+		font-size: 1.0em;
+	}
+/*CLINICAS*/
+	main a{
+		width: 80%;
+	}
+}
+@media screen and (max-width : 480px){
+	header{
+		background-size: 130%;
+	}
+	main a{
+		width:  90%;
+	}
+	/*RODAPE*/
+	footer{
+		font-size: 0.9em;
+		width: 100%;
+		margin: 0;
+	}
+	footer h2{
+		font-size: 1.3em;
+	}
+	footer p{
+		font-size: 0.9em;
+	}
+	.nomes{
+		width: 90%;
+		margin: 0;
+	}
+	.nome1{
+		margin-left: 2%;
+		width: 43%;
+		margin-right: 5%;
+	}
+	.nome2{
+		width: 42%;
+	}
+}

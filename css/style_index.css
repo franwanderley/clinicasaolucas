@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Palanquin Dark', sans-serif;
+  box-sizing: border-box; /*Quando usar o padding não altera o tamanho */
+
+}
+body{
+	background-image: url(../img/fundo.gif);
+}
+
+.logo{
+	width: 400px;
+    height: 200px;
+	margin-left: 40%;
+	margin-bottom: 2%;
+    background: url(../img/../img/sobralclinica.png) center center/400px no-repeat;
+    font-size: 0;
+	justify-content: center;
+}
+
+header{
+	width: 90%;
+	margin-left: 5%;
+	background-image: url(../img/fundoindex.jpg);
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	
+}
+header p{
+	padding: 2%;
+	font-size: 1.5em;	
+}
+h2.cv{
+	text-align: center;
+	margin: 2%;
+	width: 90%;
+}
+/*CLINICAS*/
+main{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #f5f5f5;
+	margin: 0 5%;
+	
+	justify-content: center;
+}
+main a{
+	margin: 0 auto;
+	margin-bottom: 2%;
+	display: inherit;
+}
+
+.clinicas:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clinicas{
+	background-color: #fff;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+}
+
+.c1 img{border-radius: 7px 7px 0 0;width: 100%; height: auto;}
+
+.c2 img{
+	border-radius: 7px 7px 0 0;width: 100%; height: auto;
+}
+
+.inner{ padding: 7%; } /*inner = titulo dos serviços*/
+.inner h3{
+	font-size: 1.5em;
+  color: #130400; 
+  font-weight: 700;
+	margin: 2%;
+}
+.inner h4{
+	font-size: 1.2em;
+  color: #130400;
+  margin-top: 2%;
+}
+.inner p{
+    margin-top: 6%;
+    color: #130400;
+		font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+/*Largura da pagina 40% */
+main a{
+	text-decoration: none;
+	width: 40%;
+	height: auto;
+}
+/*RODAPE*/
+footer{
+	background-color:#130400;
+	color: #fff;
+	width: 90%;
+	margin-left: 5%;
+	text-align: center;
+	font-size: 1.5em;
+}
+.nomes{
+	text-align: justify;
+	width: 60%;
+	margin-left: 15%;
+	display: inline-block;
+}
+.nome1{
+	width: 30%;
+	float: left;
+	margin-left: 0;
+}
+.nome2{
+	width: 30%;
+	float: right;
+	margin-right: 0;
+}
+li{
+	font-size: 1.0em;
+}
+
+@media screen and (max-width : 900px){
+	header{
+		background-image: url(../img/fundoresponsivo.jpg);
+		background-size: 110%;
+	}
+	header p{
+		padding-bottom: 0;
+		text-shadow: 2px 4px 3px rgba(255,255,255,0.5);
+		font-size: 1.3em;
+		
+	}
+	header h2{
+		padding-top: 20%;
+		text-shadow: 2px 4px 3px rgba(255,255,255,0.5);
+	}
+	main{
+		width: 90%;
+	}
+	.clinicas{
+		margin: 5%;
+	}
+	main a{
+		width: 50%;
+		margin: auto;
+		margin-bottom: 5%;
+		height: auto;
+	}
+	.inner h3{
+		font-size: 1.3em;
+	}
+	.inner h4{
+		font-size: 1.0em;
+	}
+	.clinicas p{
+		font-size: 0.9em;
+	}
+	c1{
+		margin: 5%;
+	}
+	
+/*Rodape*/
+	footer{
+		font-size: 1.0em;
+	}
+	.nomes{
+		width: 70%;
+	}
+	.nome1,.nome2{
+		width: 50%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width : 700px){
+	header,main,footer{
+		width: 100%;
+		margin: 0;
+	}
+	.logo{
+		margin-left: 12%;
+	}
+	header p{
+		font-size: 1.0em;
+	}
+/*CLINICAS*/
+	main a{
+		width: 80%;
+	}
+}
+@media screen and (max-width : 480px){
+	.logo{
+		margin: 0;
+	}
+	header{
+		background-size: 160%;
+	}
+	main a{
+		width:  98%;
+	}
+	/*RODAPE*/
+	footer{
+		font-size: 0.9em;
+		width: 100%;
+		margin: 0;
+	}
+	footer h2{
+		font-size: 1.3em;
+	}
+	footer p{
+		font-size: 0.9em;
+	}
+	.nomes{
+		width: 90%;
+		margin: 0;
+	}
+	.nome1{
+		margin-left: 2%;
+		width: 43%;
+		margin-right: 5%;
+	}
+	.nome2{
+		width: 42%;
+	}
+}
