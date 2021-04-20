@@ -1,5 +1,5 @@
 <h1>Site da Clinica São Lucas</h1>
-<p>Projeto final do curso de programador web, Senac, para a Clinica São Lucas</p>
+<p>Projeto final do curso de programador web, Senac, para a Clinica São Lucas. Site estático para mostrar informações sobre a clínica</p>
 <img src="https://github.com/franwanderley/clinicasaolucas/blob/master/img/clinicasaolucas.jpg" alt="Print do site,desktop e mobile">
 <h3>
     <g-emoji class="g-emoji" alias="rocket" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png">🚀</g-emoji>
