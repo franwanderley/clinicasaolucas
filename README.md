@@ -12,13 +12,13 @@
     <li>JQUERY</li>
 </ul>
 
-<h3>Usar-lo no seu Pc</h3>
+<h3>📓 Usar-lo no seu Pc</h3>
 cd 'seu diretorio'<br/>
 git clone https://github.com/franwanderley/clinicasaolucas.git <br/>
 <strong>Depois é só acessar em seu navegador</strong><br/>
 <strong>Ou pode acessar em <a href="www.clinicassobral.ga/saolucas.html">Clinica São Lucas</a></strong><br/>
 
-<h3>Como contribuir</h3>
+<h3>👍 Como contribuir</h3>
 <ul>
     <li>Faça um fork desse repositório</li>
     <li>Dá uma estrela no meu projeto</li>
