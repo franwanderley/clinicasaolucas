@@ -13,11 +13,12 @@
 </ul>
 
 <h3>📓 Usar-lo no seu Pc</h3>
-cd 'seu diretorio'<br/>
-git clone https://github.com/franwanderley/clinicasaolucas.git <br/>
-<strong>Depois é só acessar em seu navegador</strong><br/>
-<strong>Ou pode acessar em <a href="www.clinicassobral.ga/saolucas.html">Clinica São Lucas</a></strong><br/>
-
+<ul>
+<li>cd 'seu diretorio'<li>
+<li>git clone https://github.com/franwanderley/clinicasaolucas.git </li>
+<li><strong>Depois é só acessar em seu navegador</strong></li>
+<li><strong>Ou pode acessar em <a href="www.clinicassobral.ga/saolucas.html">Clinica São Lucas</a></strong></li>
+</ul>
 <h3>👍 Como contribuir</h3>
 <ul>
     <li>Faça um fork desse repositório</li>
