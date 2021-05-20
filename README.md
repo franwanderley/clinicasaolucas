@@ -12,7 +12,7 @@
     <li>JQUERY</li>
 </ul>
 
-<h3>📓 Usar-lo no seu Pc</h3>
+<h3> 💻 Usar-lo no seu Pc</h3>
 <ul>
 <li>cd 'seu diretorio'<li>
 <li>git clone https://github.com/franwanderley/clinicasaolucas.git </li>
