@@ -153,6 +153,12 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+@media (max-width: 768px) {
+  .topbar {
+    display: none; /* Oculta a barra de topo com 4 linhas no celular para dar destaque limpo ao header */
+  }
+}
+
 .topbar-content {
   display: flex;
   flex-wrap: wrap;
@@ -219,12 +225,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--glass-bg);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  border-bottom: 1px solid rgba(235, 218, 218, 0.8);
   transition: all var(--transition-normal);
 }
 
 .navbar-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.96);
   box-shadow: var(--shadow-sm);
 }
 
@@ -233,6 +239,14 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   height: 76px;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-inner {
+    height: 64px;
+    gap: 0.5rem;
+  }
 }
 
 /* Logotipo */
@@ -241,6 +255,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 .brand-icon {
@@ -278,15 +294,18 @@ h1, h2, h3, h4, h5, h6 {
 .brand-text {
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  justify-content: center;
 }
 
 .brand-name {
   font-family: var(--font-heading);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--primary-900);
   line-height: 1.1;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .brand-name span {
@@ -299,6 +318,46 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-subtle);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    gap: 0.55rem;
+  }
+  .brand-img-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  .brand-sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    gap: 0.5rem;
+  }
+  .brand-img-logo {
+    width: 38px;
+    height: 38px;
+  }
+  .brand-name {
+    font-size: 0.95rem;
+  }
+  .brand-sub {
+    display: none; /* Oculta o subtítulo em celulares para a marca não quebrar e respirar livremente */
+  }
+}
+
+@media (max-width: 350px) {
+  .brand-name {
+    font-size: 0.88rem;
+  }
 }
 
 /* Menu de Navegação Desktop */
@@ -349,7 +408,39 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-actions {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.btn-header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.btn-cta-text-short {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .btn-cta-text-full {
+    display: none;
+  }
+  .btn-cta-text-short {
+    display: inline;
+  }
+  .btn-header-cta {
+    padding: 0.42rem 0.75rem;
+    font-size: 0.82rem;
+    border-radius: var(--radius-full);
+  }
+}
+
+@media (max-width: 380px) {
+  .btn-header-cta {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.78rem;
+  }
 }
 
 /* Botão Menu Hambúrguer */
@@ -357,18 +448,31 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: var(--radius-md);
-  background-color: var(--bg-surface-alt);
+  background-color: var(--primary-50);
+  border: 1px solid var(--primary-100);
   color: var(--primary-900);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   transition: all var(--transition-fast);
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .btn-toggle-menu:hover {
   background-color: var(--primary-100);
   color: var(--primary-700);
+  transform: scale(1.04);
+}
+
+@media (max-width: 480px) {
+  .btn-toggle-menu {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    border-radius: var(--radius-sm);
+  }
 }
 
 @media (min-width: 992px) {

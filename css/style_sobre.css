@@ -28,6 +28,42 @@
   z-index: 2;
 }
 
+.page-hero-about .page-hero-tag {
+  display: inline-block;
+  background-color: rgba(184, 54, 72, 0.25);
+  color: #fecdd3;
+  border: 1px solid rgba(184, 54, 72, 0.45);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.page-hero-about .page-hero-title {
+  font-size: clamp(1.75rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.page-hero-about .page-hero-subtitle {
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .page-hero-about {
+    padding: 2.5rem 0 2.25rem 0;
+  }
+}
+
 /* Timeline / História */
 .history-grid {
   display: grid;
